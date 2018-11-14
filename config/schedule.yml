@@ -1,0 +1,16 @@
+# # http://crontab.guru/
+# first_job:
+#   cron: "00 00 * * * Africa/Nairobi" # 12am
+#   class: "HardWorker"
+#   queue: default
+#   args:
+#     action: first_action
+#     _aj_symbol_keys: ["action"]
+
+# second_job:
+#   cron: "00 8-21/4 * * * Africa/Nairobi" # 8-21/4
+#   class: "HardWorker"
+#   queue: default
+#   args:
+#     action: second_action
+#     _aj_symbol_keys: ["action"]
