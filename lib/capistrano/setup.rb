@@ -119,7 +119,7 @@ namespace :setup do
     on roles(:all), in: :sequence, wait: 5 do
       # Setup Bitbucket deployment keys
       execute 'ssh-keyscan  github.com  >> ~/.ssh/known_hosts' # add bitbucket key to server for passwordless deployment
-      execute 'ssh -T git@bitbucket.org ' # add bitbucket key to server for passwordless deployment
+      #execute 'ssh -T git@bitbucket.org ' # add bitbucket key to server for passwordless deployment
       # Setup postgresql and ruby
       ipaddress = capture (%{ifconfig | awk '/inet addr/{print substr($2,6)}' | awk 'NR==1'})
       info '#####################################################################'
